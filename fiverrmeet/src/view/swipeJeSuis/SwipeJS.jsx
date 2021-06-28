@@ -1,7 +1,7 @@
 import React from "react";
 
-function App(props) {
+function SwipeJS(props) {
   return <div></div>;
 }
 
-export default App;
+export default SwipeJS;
