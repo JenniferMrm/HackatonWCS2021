@@ -1,10 +1,12 @@
 import React from "react";
-import Accueil from "./view/accueil/Accueil";
+// import Accueil from "./view/accueil/Accueil";
+import Login from "./view/login/Login";
 
 
 function App(props) {
   return <div >
-  <Accueil />
+  {/* <Accueil /> */}
+  <Login />
   </div>;
 }
 

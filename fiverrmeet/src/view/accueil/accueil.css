@@ -1,13 +1,9 @@
-.logo {
+#logo-accueil {
     width: 300px;
-    display: flex;
-    margin: auto;
-    margin-top: 50%;
     animation-name: slideIn;
     animation-duration: 5s;
     animation-iteration-count: 1;
-  };
-
+  }
   @keyframes slideIn {
     0% {
       transform: rotate(0deg);
@@ -28,3 +24,4 @@
       opacity: 0;
     }
   }
+  
