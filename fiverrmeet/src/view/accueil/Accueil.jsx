@@ -50,14 +50,15 @@ export default function ButtonSizes() {
         />
         </button>
         </Link>
-        <button className={classes.button} to="/ICanHelp"
-                  component={Link}>
+        <Link to={"/ICanHelp"}>
+        <button className={classes.button}>
         <img
           className={classes.picture}
           alt="picture"
           src="./assets/help1.png"
         />
         </button>
+        </Link>
       </div>
     </div>
   );
