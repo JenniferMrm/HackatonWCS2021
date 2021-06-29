@@ -5,11 +5,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
-import HomeIcon from "@material-ui/icons/Home";
 import MenuIcon from "@material-ui/icons/Menu";
-import LocalBarIcon from "@material-ui/icons/LocalBar";
-import LocalDrinkIcon from "@material-ui/icons/LocalDrink";
-import FavoriteIcon from "@material-ui/icons/Favorite";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -37,6 +33,7 @@ const useStyles = makeStyles({
     backgroundColor: "white",
     fontSize: "15px",
     textAlign: "start",
+    fontFamily: "Poppins",
   },
 
   needHelp: {
@@ -45,6 +42,7 @@ const useStyles = makeStyles({
     padding: "20px 0",
     backgroundColor: "white",
     fontSize: "15px",
+    fontFamily: "Poppins",
   },
 
   canHelp: {
@@ -53,6 +51,7 @@ const useStyles = makeStyles({
     padding: "20px 0",
     backgroundColor: "white",
     fontSize: "15px",
+    fontFamily: "Poppins",
   },
 
   menuicon: {
