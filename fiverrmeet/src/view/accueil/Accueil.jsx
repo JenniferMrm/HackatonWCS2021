@@ -13,27 +13,26 @@ const useStyles = makeStyles((theme) => ({
     width: "90%",
     margin: "15px",
     borderRadius: "10%",
-    '&:hover': {
-        opacity:"0,5",
-    }
+    "&:hover": {
+      opacity: "0,5",
+    },
   },
-  img: {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
- 
-},
-button: {
-    border: "none", 
+  img: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  button: {
+    border: "none",
     background: "none",
 
-    '&:hover': {
-        opacity:"0.8",
+    "&:hover": {
+      opacity: "0.8",
     },
-},
-// back: {
-//    backgroundColor: "black",
-// }
+  },
+  // back: {
+  //    backgroundColor: "black",
+  // }
 }));
 
 export default function ButtonSizes() {
@@ -42,21 +41,19 @@ export default function ButtonSizes() {
   return (
     <div className={classes.back}>
       <div className={classes.img}>
-        <button className={classes.button} to="/needHelp"
-                  component={Link}>
-        <img
-          className={classes.picture}
-          alt="picture"
-          src="./assets/help.png"
-        />
+        <button className={classes.button} to="/needHelp" component={Link}>
+          <img
+            className={classes.picture}
+            alt="picture"
+            src="./assets/help.png"
+          />
         </button>
-        <button className={classes.button} to="/ICanHelp"
-                  component={Link}>
-        <img
-          className={classes.picture}
-          alt="picture"
-          src="./assets/help1.png"
-        />
+        <button className={classes.button} to="/ICanHelp" component={Link}>
+          <img
+            className={classes.picture}
+            alt="picture"
+            src="./assets/help1.png"
+          />
         </button>
       </div>
     </div>
