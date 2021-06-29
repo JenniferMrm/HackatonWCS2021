@@ -1,13 +1,18 @@
 #logo-accueil {
-    width: 300px;
+  width: 240px;
+  display: flex;
+ margin: auto;
+margin-top: 30%;
     animation-name: slideIn;
     animation-duration: 5s;
     animation-iteration-count: 1;
   }
   @keyframes slideIn {
     0% {
-      transform: rotate(0deg);
       opacity: 1;
+    }
+    30%{
+      transform: rotate(0deg);
     }
   
     50% {
@@ -21,6 +26,26 @@
   
     100% {
       transform: rotate(720deg);
+      opacity: 0;
+    }
+  }
+  #h3{
+    font-family: "pacifico";
+      font-size:35px;
+      display: flex;
+      justify-content: center;
+    animation-name: welcome;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes welcome {
+    0% {
+      opacity: 1;
+    }
+80%{
+  opacity: 1;
+}
+    100% {
       opacity: 0;
     }
   }
