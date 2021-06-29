@@ -63,7 +63,7 @@ export default function IconLabelButtons() {
           <Button size="small" className={classes.button}
                   to="/home"
                   component={Link}>
-            Connected with FIVERR
+            Connected with FIVERR.
             <SendIcon className={classes.icon2} />
           </Button>
         </div>
