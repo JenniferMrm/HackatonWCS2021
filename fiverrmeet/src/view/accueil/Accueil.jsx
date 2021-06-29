@@ -1,12 +1,14 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import "./Welcome.css";
 
-function Welcome() {
+
+function Accueil(props) {
   const history = useHistory()
  setTimeout(() =>{
    history.push('/Login')
  },4990)
+
+
 
   return <div>
     <img className = "logo"
@@ -16,4 +18,4 @@ function Welcome() {
   </div>;
 }
 
-export default Welcome;
+export default Accueil;
