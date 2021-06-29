@@ -6,36 +6,53 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {},
   image: {
-    width: "250px",
-    heigth: "370px",
+    width: "230px",
+    heigth: "330px",
     display: "flex",
     margin: "auto",
+    marginTop: "30px",
     borderRadius: "50%",
   },
-  favoriteIcon: {
+  fav_clear_icon: {
     display: "flex",
     justifyContent: "space-between",
+    fontSize: "60px",
+    marginTop: "50%",
   },
   title: {
     display: "flex",
     margin: "auto",
+    justifyContent: "center",
   },
-  description: {},
+  description: {
+    display: "flex",
+    textAlign: "justify",
+    marginRight: "30px",
+    marginTop: "30px",
+  },
+  image_icons: {
+    display: "flex",
+    margin: "auto",
+    width: "80px",
+    height: "80px",
+  },
 });
 
-function SwipeJC({ name, image, description }) {
+function SwipeJC({ name, image, description, icons }) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <img className={classes.image} alt={name} src={image} />
-      <div className={classes.favoriteIcon}>
-        <ClearIcon style={{ fontSize: "60px" }} />
-        <FavoriteBorderIcon style={{ fontSize: "60px" }} />
+      <div className={classes.text}>
+        <h2 className={classes.title}>{name}</h2>
+        <p className={classes.description}>{description}</p>
       </div>
-      <h2 className={classes.title}>{name}</h2>
-      <p className={classes.description}>{description}</p>
-      {/* <img className={classes.image_icons} src={icons} alt={name.icons} /> */}
+      <div className={classes.fav_clear_icon}>
+        <ClearIcon />
+        <FavoriteBorderIcon />
+      </div>
+      <img className={classes.image_icons} src={icons} alt={name.icons} />
     </div>
   );
 }
