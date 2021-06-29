@@ -1,190 +1,104 @@
 import React from "react";
-import { Icon, makeStyles } from "@material-ui/core";
-import { IconButton } from "@material-ui/core";
-
+import { makeStyles } from "@material-ui/core";
+import Icon from "./components/Icon";
+import Button from "@material-ui/core/Button";
 const useStyles = makeStyles({
   title: {
     fontFamily: "Poppins",
     textAlign: "center",
-  },
-  icon: {
-    width: 50,
-    color: "white",
-  },
-  div: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#F02300",
-    margin: 10,
-    padding: 10,
+    marginBottom: "50px",
+    borderBottom: "1px solid",
+    color: "#017940",
   },
 
   contain: {
-    width : "100%",
+    width: "100%",
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
     gridTemplateRows: "repeat(3, 1fr)",
-    gridGap: "5px",
+    gridGap: "10px",
+    justifyItems: "center",
   },
 
-  lifestyle: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#F02300",
-    margin: 15,
-    padding: 15,
+  container: {
+    margin: "0",
   },
-  dev: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#FF8000",
-    margin: 15,
-    padding: 15,
-  },
-  write: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#FFFB01",
-    margin: 15,
-    padding: 15,
-  },
-  design: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#D0E500",
-    margin: 15,
-    padding: 15,
-  },
-  audio: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#1FBF73",
-    margin: 15,
-    padding: 15,
-  },
-  marketing: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#017940",
-    margin: 15,
-    padding: 15,
-  },
-  video: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#4040FF",
-    margin: 15,
-    padding: 15,
-  },
-  business: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#9F2BC0",
-    margin: 15,
-    padding: 15,
-  },
-  data: {
-    width: 50,
-    borderRadius: "100%",
-    backgroundColor: "#FF80AE",
-    margin: 15,
-    padding: 15,
+  root: {
+    background: "linear-gradient(45deg, #3be593 30%, #00732e 90%)",
+    border: 0,
+    borderRadius: 10,
+    boxShadow: "0 3px 5px 2px rgba(199, 201, 200, .3)",
+    color: "white",
+    height: 48,
+    padding: "0 30px",
+    display: "flex",
+    justifyContent: "center",
+    margin: "auto",
+    marginTop: "30px",
+    fontFamily: "Poppins",
   },
 });
 
-function JeCherche(props) {
+const icons = [
+  {
+    url: "./assets/icons/icon01.png",
+    color: "#F02300",
+    title: "Lifestyle",
+  },
+  {
+    url: "./assets/icons/icon02.png",
+    color: "#FF8000",
+    title: "Programming & Tech",
+  },
+  {
+    url: "./assets/icons/icon03.png",
+    color: "#FFFB01",
+    title: "Writing & Translation",
+  },
+  {
+    url: "./assets/icons/icon04.png",
+    color: "#D0E500",
+    title: "Graphic & Design",
+  },
+  {
+    url: "./assets/icons/icon05.png",
+    color: "#1FBF73",
+    title: "Music & Audio",
+  },
+  {
+    url: "./assets/icons/icon06.png",
+    color: "#017940",
+    title: "Digital Marketing",
+  },
+  {
+    url: "./assets/icons/icon07.png",
+    color: "#4040FF",
+    title: "Video & Animation",
+  },
+  {
+    url: "./assets/icons/icon08.png",
+    color: "#9F2BC0",
+    title: "Business",
+  },
+  {
+    url: "./assets/icons/icon09.png",
+    color: "#FF80AE",
+    title: "Data",
+  },
+];
+
+function JeCherche() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.container}>
       <h1 className={classes.title}>I'm searching for...</h1>
       <div className={classes.contain}>
-        <IconButton>
-          <div className={classes.lifestyle}>
-            <img
-              className={classes.icon}
-              src="./assets/icons/001-lifestyle.png"
-              alt="lifestyle"
-            ></img>
-          </div>
-        </IconButton>
-
-        <IconButton>
-          <div className={classes.dev}>
-            <img
-              className={classes.icon}
-              src="./assets/icons/002-web-programming.png"
-              alt="dev"
-            ></img>
-          </div>
-        </IconButton>
-
-        <IconButton>
-          <div className={classes.write}>
-            <img
-              className={classes.icon}
-              src="./assets/icons/003-notes.png"
-              alt="writing"
-            ></img>
-          </div>
-        </IconButton>
-
-        <IconButton>
-          <div className={classes.design}>
-            <img
-              className={classes.icon}
-              src="./assets/icons/004-computer.png"
-              alt="design"
-            ></img>
-          </div>
-        </IconButton>
-
-        <IconButton>
-          <div className={classes.audio}>
-            <img
-              className={classes.icon}
-              src="./assets/icons/005-headphones.png"
-              alt="audio"
-            ></img>
-          </div>
-        </IconButton>
-        <IconButton>
-          <div className={classes.marketing}>
-            <img
-              className={classes.icon}
-              src="./assets/icons/006-social-media.png"
-              alt="marketing"
-            ></img>
-          </div>
-        </IconButton>
-        <IconButton>
-          <div className={classes.video}>
-            <img
-              className={classes.icon}
-              src="./assets/icons/007-online-video.png"
-              alt="video"
-            ></img>
-          </div>
-        </IconButton>
-        <IconButton>
-          <div className={classes.business}>
-            <img
-              className={classes.icon}
-              src="./assets/icons/008-hand-shake.png"
-              alt="business"
-            ></img>
-          </div>
-        </IconButton>
-        <IconButton>
-          <div className={classes.data}>
-            <img
-              className={classes.icon}
-              src="./assets/icons/009-data.png"
-              alt="data"
-            ></img>
-          </div>
-        </IconButton>
+        {icons.map((icon, index) => (
+          <Icon {...icon} key={index} />
+        ))}
       </div>
+      <Button className={classes.root}>Go !</Button>
     </div>
   );
 }
