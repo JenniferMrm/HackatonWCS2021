@@ -1,7 +1,7 @@
 import React from "react";
 import "./Welcome.css";
 
-function Accueil(props) {
+function Welcome(props) {
   return <div>
     <img className = "logo"
     id="logo-accueil" 
@@ -10,4 +10,4 @@ function Accueil(props) {
   </div>;
 }
 
-export default Accueil;
+export default Welcome;
