@@ -16,20 +16,29 @@ const useStyles = makeStyles({
     position: "fixed",
     top: 0,
   },
+  headerContainer: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "end",
+    width: "100%",
+  },
 });
 
 function Header(props) {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.headerContainer}>
       <div className={classes.headerContainer}>
         <img
           className={classes.logo}
           alt="logo"
           src="./assets/Fiverr.png"
         ></img>
-        <MenuBurger />
+        <div className={classes.menuContainer}>
+          <MenuBurger />
+        </div>
       </div>
     </div>
   );
