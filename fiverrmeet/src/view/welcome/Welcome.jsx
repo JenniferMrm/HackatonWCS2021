@@ -1,14 +1,13 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import "./Welcome.css";
 
-const useStyles = makeStyles({
-  root: {},
-});
-
-function Welcome() {
-  const classes = useStyles();
-
-  return <div></div>;
+function Accueil(props) {
+  return <div>
+    <img className = "logo"
+    id="logo-accueil" 
+    alt="logoaccueil"
+    src="./assets/Logo.png"/>
+  </div>;
 }
 
-export default Welcome;
+export default Accueil;
