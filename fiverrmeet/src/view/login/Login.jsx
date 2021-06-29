@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,6 +9,19 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
   },
 }));
+=======
+import React from "react";
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+  root: {},
+});
+
+function Login(props) {
+  const classes = useStyles();
+  return <div></div>;
+}
+>>>>>>> origin/dev
 
 export default function IconLabelButtons() {
   const classes = useStyles();
