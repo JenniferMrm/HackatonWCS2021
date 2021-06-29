@@ -2,6 +2,7 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import SendIcon from "@material-ui/icons/Send";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -59,8 +60,10 @@ export default function IconLabelButtons() {
             alt="logoaccueil"
             src="./assets/Fiverr_Symbol_Green_RGB.png"
           />
-          <Button size="small" className={classes.button}>
-            Connected with FIVERR
+          <Button size="small" className={classes.button}
+                  to="/home"
+                  component={Link}>
+            Connected with FIVERR..
             <SendIcon className={classes.icon2} />
           </Button>
         </div>
