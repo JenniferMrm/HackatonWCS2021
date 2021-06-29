@@ -54,37 +54,23 @@ export default function IconLabelButtons() {
 
   return (
     <div id="loginAnimation">
-      <div className={classes.background}>
-        <div className={classes.back}>
-          <div className={classes.contain}>
-            <img
-              className={classes.icon}
-              alt="logoaccueil"
-              src="./assets/Fiverr_Symbol_Green_RGB.png"
-            />
-            <Link
-              to="/Accueil"
-              style={{
-                textDecoration: "none",
-                color: "inherit",
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <Button size="small" className={classes.button}>
-                <img
-                  className={classes.icon}
-                  alt="logoaccueil"
-                  src="./assets/Fiverr_Symbol_Green_RGB.png"
-                />
-                Connected with FIVERR
-                <SendIcon className={classes.icon2} />
-              </Button>
-            </Link>
-          </div>
+    <div className={classes.background}>
+      <div className={classes.back}>
+        <div className={classes.contain}>
+          <img
+            className={classes.icon}
+            alt="logoaccueil"
+            src="./assets/Fiverr_Symbol_Green_RGB.png"
+          />
+          <Button size="small" className={classes.button}
+                  to="/home"
+                  component={Link}>
+            Connected with FIVERR
+            <SendIcon className={classes.icon2} />
+          </Button>
         </div>
       </div>
+    </div>
     </div>
   );
 }
