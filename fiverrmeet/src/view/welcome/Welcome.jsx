@@ -8,7 +8,7 @@ const useStyles = makeStyles({
 function Welcome() {
   const classes = useStyles();
 
-  return <div></div>;
+  return <div className={classes.welcomeContainer}></div>;
 }
 
 export default Welcome;

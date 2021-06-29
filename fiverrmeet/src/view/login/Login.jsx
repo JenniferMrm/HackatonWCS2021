@@ -7,7 +7,7 @@ const useStyles = makeStyles({
 
 function Login(props) {
   const classes = useStyles();
-  return <div></div>;
+  return <div className={classes.loginContainer}></div>;
 }
 
 export default Login;
