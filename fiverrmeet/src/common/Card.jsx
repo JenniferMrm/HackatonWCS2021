@@ -38,7 +38,7 @@ const useStyles = makeStyles({
   },
 });
 
-function SwipeJC({ name, image, description, icons }) {
+function SwipeJC({ name, image, description, icons, title }) {
   const classes = useStyles();
 
   return (
@@ -53,6 +53,7 @@ function SwipeJC({ name, image, description, icons }) {
         <FavoriteBorderIcon />
       </div>
       <img className={classes.image_icons} src={icons} alt={name.icons} />
+      <p className={classes.title_logo}>{title}</p>
     </div>
   );
 }

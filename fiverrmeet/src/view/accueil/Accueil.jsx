@@ -45,7 +45,7 @@ export default function ButtonSizes() {
         <button className={classes.button}> 
         <img
           className={classes.picture}
-          alt="picture"
+          alt="je t'aide"
           src="./assets/help.png"
         />
         </button>
@@ -54,7 +54,7 @@ export default function ButtonSizes() {
         <button className={classes.button}>
         <img
           className={classes.picture}
-          alt="picture"
+          alt="tu m'aides"
           src="./assets/help1.png"
         />
         </button>
