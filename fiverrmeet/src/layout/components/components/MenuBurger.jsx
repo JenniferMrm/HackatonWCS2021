@@ -14,50 +14,45 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   list: {
-    width: 280,
+    width: 320,
     color: "#4E96AF",
   },
 
-  burgerbut: {
+  burger: {
     color: "black",
     height: "60px",
     textAlign: "center",
     fontWeight: "bold",
     margin: "10px",
   },
+
   puces: {
     listStyle: "none",
   },
-  accueil: {
+
+  home: {
     border: "none",
-    color: "#6C5AFF",
-    padding: "20px",
+    color: "black",
+    padding: "20px 0",
     backgroundColor: "white",
     fontSize: "15px",
-    "&:hover": {
-      fontSize: "17px",
-    },
-  },
-  nous: {
-    border: "none",
-    color: "#6C5AFF",
-    padding: "20px",
-    backgroundColor: "white",
-    fontSize: "15px",
-    "&:hover": {
-      fontSize: "17px",
-    },
+    textAlign: "start",
   },
 
-  ajout: {
+  needHelp: {
     border: "none",
-    color: "#6C5AFF",
-    padding: "20px",
+    color: "black",
+    padding: "20px 0",
     backgroundColor: "white",
     fontSize: "15px",
-    "&:hover": {
-      fontSize: "17px",
-    },
+  },
+
+  canHelp: {
+    border: "none",
+    color: "black",
+    padding: "20px 0",
+    backgroundColor: "white",
+    fontSize: "15px",
   },
 
   menuicon: {
@@ -66,11 +61,6 @@ const useStyles = makeStyles({
     marginLeft: "10px",
   },
 
-  plus: {
-    color: "#85F62C",
-    fontSize: "30px",
-    textDecoration: "none",
-  },
   menuBurgerContainer: {
     width: "100%",
     alignSelf: "end",
@@ -102,66 +92,42 @@ export default function MenuBurger() {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      style={{ backgroundColor: "#60AAFF", height: "100%" }}
+      style={{ backgroundColor: "white", height: "100%" }}
     >
       <List>
-        <div className={classes.menuburgerlist}>
+        <div className={classes.menuBurgerList}>
           <ul className={classes.puces}>
             <li>
               <Button
-                className={classes.accueil}
-                to="/"
+                className={classes.home}
+                to="/home"
                 component={Link}
-                style={{ backgroundColor: "#60AAFF" }}
+                style={{ textDecoration: "none", backgroundColor: "white" }}
               >
-                <ListItemIcon>
-                  <HomeIcon className={classes.plus} />
-                </ListItemIcon>
-                <strong>ACCUEIL</strong>
+                <strong>HOME PAGE</strong>
               </Button>
             </li>
             <li>
               <Button
-                className={classes.nous}
-                to="/drinks"
+                className={classes.needHelp}
+                to="/needHelp"
                 component={Link}
-                style={{ textDecoration: "none", backgroundColor: "#60AAFF" }}
+                style={{ textDecoration: "none", backgroundColor: "white" }}
               >
-                <ListItemIcon>
-                  <LocalBarIcon className={classes.plus} />
-                </ListItemIcon>
                 <>
-                  <strong>COCKTAILS</strong>{" "}
+                  <strong>I'M SEARCHING FOR HELP</strong>{" "}
                 </>
               </Button>
             </li>
             <li>
               <Button
-                className={classes.ajout}
-                to="/snacks"
+                className={classes.canHelp}
+                to="/ICanHelp"
                 component={Link}
-                style={{ textDecoration: "none", backgroundColor: "#60AAFF" }}
+                style={{ textDecoration: "none", backgroundColor: "white" }}
               >
-                <ListItemIcon>
-                  <LocalDrinkIcon className={classes.plus} />
-                </ListItemIcon>
                 <>
-                  <strong>SNACKS</strong>{" "}
-                </>
-              </Button>
-            </li>
-            <li>
-              <Button
-                className={classes.ajout}
-                to="/extras"
-                component={Link}
-                style={{ textDecoration: "none", backgroundColor: "#60AAFF" }}
-              >
-                <ListItemIcon>
-                  <FavoriteIcon className={classes.plus} />
-                </ListItemIcon>
-                <>
-                  <strong>EXTRAS</strong>{" "}
+                  <strong>I CAN HELP</strong>{" "}
                 </>
               </Button>
             </li>
@@ -177,7 +143,7 @@ export default function MenuBurger() {
         <React.Fragment key={anchor}>
           <Button
             onClick={toggleDrawer(anchor, true)}
-            className={classes.burgerbut}
+            className={classes.burger}
           >
             <ListItemIcon>
               <MenuIcon className={classes.menuicon} />

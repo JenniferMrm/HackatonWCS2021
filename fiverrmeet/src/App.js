@@ -14,24 +14,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <Main>
-              <Welcome />
-            </Main>
-          )}
-        />
-        <Route
-          exact
-          path="/login"
-          render={() => (
-            <Main>
-              <Login />
-            </Main>
-          )}
-        />
+        <Route exact path="/" render={() => <Welcome />} />
+        <Route exact path="/login" render={() => <Login />} />
         <Route
           exact
           path="/home"
@@ -43,7 +27,7 @@ function App() {
         />
         <Route
           exact
-          path="/lookingFor"
+          path="/needHelp"
           render={() => (
             <Main>
               <JeCherche />
@@ -52,7 +36,7 @@ function App() {
         />
         <Route
           exact
-          path="/iCanHelp"
+          path="/ICanHelp"
           render={() => (
             <Main>
               <JeSuis />
@@ -61,7 +45,7 @@ function App() {
         />
         <Route
           exact
-          path="/swipeLookingFor"
+          path="/swipeNeedHelp"
           render={() => (
             <Main>
               <SwipeJC />
