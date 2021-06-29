@@ -1,15 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-import Accueil from "./view/accueil/Accueil";
-import Login from "./view/login/Login";
-
-
-function App(props) {
-  return <div >
-  <Accueil />
-  {/* <Login /> */}
-  </div>;
-=======
 import Main from "./layout/Main";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Welcome from "./view/welcome/Welcome";
@@ -25,14 +14,14 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" render={() => <Welcome />} />
+        <Route exact path="/" render={() => <Accueil />} />
         <Route exact path="/login" render={() => <Login />} />
         <Route
           exact
           path="/home"
           render={() => (
             <Main>
-              <Accueil />
+              <Welcome />
             </Main>
           )}
         />
@@ -84,7 +73,6 @@ function App() {
       </Switch>
     </Router>
   );
->>>>>>> origin/dev
 }
 
 export default App;

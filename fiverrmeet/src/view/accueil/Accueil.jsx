@@ -1,8 +1,13 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./accueil.css";
 
 function Accueil(props) {
-  
+  const history = useHistory()
+ setTimeout(() =>{
+   history.push('/Login')
+ },4990)
+
 
 
   return <div>
