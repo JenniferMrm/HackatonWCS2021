@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core";
 import Icon from "../jeCherche/components/Icon";
 import Button from "@material-ui/core/Button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const useStyles = makeStyles({
   title: {
     fontFamily: "Poppins",
@@ -37,6 +39,11 @@ const useStyles = makeStyles({
     margin: "auto",
     marginTop: "30px",
     fontFamily: "Poppins",
+  },
+
+  link: {
+    textDecoration: "none",
+    color: "inherit",
   },
 });
 
@@ -100,7 +107,9 @@ function JeSuis() {
           <Icon {...icon} key={index} />
         ))}
       </div>
-      <Button className={classes.root}>Go !</Button>
+      <Link to={"/swipeICanHelp"} className={classes.link}>
+        <Button className={classes.root}>Go !</Button>
+      </Link>
     </div>
   );
 }

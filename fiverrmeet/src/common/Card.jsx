@@ -61,7 +61,7 @@ const useStyles = makeStyles({
   }
 });
 
-function SwipeJC({ name, image, description, icons }) {
+function SwipeJC({ name, image, description, icons, title }) {
   const classes = useStyles();
 
   return (
@@ -72,16 +72,21 @@ function SwipeJC({ name, image, description, icons }) {
       <div className={classes.text}>
         <h2 className={classes.title}>{name}</h2>
         <img className={classes.image_icons} src={icons} alt={name.icons} />
+        <p className={classes.title_logo}>{title}</p>
         <p className={classes.description}>{description}</p>
        
       </div>
       <div>
        
        <Link to="/message"> <IconButton ><FavoriteBorderIcon className={classes.fav_clear_icon}/></IconButton></Link>
-      </div>
      
+      </div>
       </Card>
-    </div>
+      </div> 
+     
+     
+      
+   
   );
 }
 
