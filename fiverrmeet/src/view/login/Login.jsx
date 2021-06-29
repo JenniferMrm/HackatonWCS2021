@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "30px",
     margin: "20px",
     fontFamily: "Poppins",
+    '&:hover': {
+      backgroundColor: "#F0E68C",
+    }
   },
 
   back: {
@@ -29,12 +32,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   icon: {
-    fontSize: "20px",
-    color: "white",
-    backgroundColor: "#1FBF73",
-    borderRadius: "50%",
-    padding: "10px",
-   
+   width: "15%",
+  marginBottom: "10px",
   },
 
   contain: {
@@ -57,7 +56,10 @@ export default function IconLabelButtons() {
     <div className={classes.background}>
       <div className={classes.back}>
         <div className={classes.contain}>
-          <LockOpenIcon className={classes.icon} />
+        <img className = {classes.icon}
+        
+        alt="logoaccueil"
+        src="./assets/Fiverr_Symbol_Green_RGB.png"/>
           <Button size="small" className={classes.button}>
             Connected with FIVERR
             <SendIcon className={classes.icon2}/>
