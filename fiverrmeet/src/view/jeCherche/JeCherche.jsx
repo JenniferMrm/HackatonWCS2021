@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon, makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import { IconButton } from "@material-ui/core";
 
 const useStyles = makeStyles({
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
   },
 
   contain: {
-    width : "100%",
+    width: "100%",
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
     gridTemplateRows: "repeat(3, 1fr)",

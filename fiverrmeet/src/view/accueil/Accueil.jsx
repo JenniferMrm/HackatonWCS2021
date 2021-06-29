@@ -1,21 +1,64 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
+const useStyles = makeStyles((theme) => ({
+  margin: {
+    margin: theme.spacing(1),
+  },
+  extendedIcon: {
+    marginRight: theme.spacing(1),
+  },
+  picture: {
+    width: "90%",
+    margin: "15px",
+    borderRadius: "10%",
+    '&:hover': {
+        opacity:"0,5",
+    }
+  },
+  img: {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+ 
+},
+button: {
+    border: "none", 
+    background: "none",
 
-function Accueil(props) {
-  const history = useHistory()
- setTimeout(() =>{
-   history.push('/Login')
- },4990)
+    '&:hover': {
+        opacity:"0.8",
+    },
+},
+// back: {
+//    backgroundColor: "black",
+// }
+}));
 
+export default function ButtonSizes() {
+  const classes = useStyles();
 
-
-  return <div>
-    <img className = "logo"
-    id="logo-accueil" 
-    alt="logoaccueil"
-    src="./assets/Logo.png"/>
-  </div>;
+  return (
+    <div className={classes.back}>
+      <div className={classes.img}>
+        <button className={classes.button} to="/needHelp"
+                  component={Link}>
+        <img
+          className={classes.picture}
+          alt="picture"
+          src="./assets/help.png"
+        />
+        </button>
+        <button className={classes.button} to="/ICanHelp"
+                  component={Link}>
+        <img
+          className={classes.picture}
+          alt="picture"
+          src="./assets/help1.png"
+        />
+        </button>
+      </div>
+    </div>
+  );
 }
-
-export default Accueil;

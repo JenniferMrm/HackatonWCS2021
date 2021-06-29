@@ -3,10 +3,10 @@ import { useHistory } from "react-router-dom";
 import "./Welcome.css";
 
 function Welcome() {
-  const history = useHistory()
- setTimeout(() =>{
-   history.push('/Login')
- },4990)
+  const history = useHistory();
+  setTimeout(() => {
+    history.push("/Login");
+  }, 4990);
 
   return <div
   style={{
