@@ -1,14 +1,19 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
+import "./Welcome.css";
 
-const useStyles = makeStyles({
-  root: {},
-});
+function Accueil(props) {
+  const history = useHistory()
+ setTimeout(() =>{
+   history.push('/Login')
+ },4990)
 
-function Welcome() {
-  const classes = useStyles();
-
-  return <div></div>;
+  return <div>
+    <img className = "logo"
+    id="logo-accueil" 
+    alt="logoaccueil"
+    src="./assets/Logo.png"/>
+  </div>;
 }
 
-export default Welcome;
+export default Accueil;
