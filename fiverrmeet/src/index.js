@@ -3,6 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/DomaineDisplayApp-MediumItalic.ttf';
+import './fonts/Macan-Black.ttf';
+import './fonts/Macan-Bold.ttf';
+import './fonts/Macan-Light.ttf';
+import './fonts/Macan-Regular.ttf';
+import './fonts/Macan-Regular-Italic.ttf';
+import './fonts/Macan-Semibold.ttf';
+import './fonts/DomaineDisplayApp-Bold.ttf';
+
+
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
