@@ -27,7 +27,9 @@ function Footer() {
         src="./assets/Logo.png"
         alt="logo"
       ></img>
-      <p style={{ fontFamily: "Poppins" }}>©2021 Fiverr - All right reserved</p>
+      <p style={{ fontFamily: "Poppins" }}>
+        ©2021 Fiverr - All rights reserved
+      </p>
     </div>
   );
 }

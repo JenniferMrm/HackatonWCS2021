@@ -63,7 +63,7 @@ function App() {
         />
         <Route
           exact
-          path="/sendMessage"
+          path="/message"
           render={() => (
             <Main>
               <Message />
