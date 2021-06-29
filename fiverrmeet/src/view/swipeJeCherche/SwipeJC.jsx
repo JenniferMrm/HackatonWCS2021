@@ -20,7 +20,7 @@ SwiperCore.use([Pagination, Navigation]);
 //   root: {},
 // });
 
-function SwipeJC() {
+function SwipeJC({ title }) {
   // const classes = useStyles();
 
   const user = [
@@ -60,6 +60,7 @@ function SwipeJC() {
             <Card key={index} {...users} />
           </SwiperSlide>
         ))}
+        <p>{title}</p>
       </Swiper>
     </>
   );

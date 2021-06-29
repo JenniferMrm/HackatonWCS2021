@@ -2,6 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import Icon from "./components/Icon";
 import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
+
 const useStyles = makeStyles({
   title: {
     fontFamily: "Poppins",
@@ -36,6 +38,10 @@ const useStyles = makeStyles({
     margin: "auto",
     marginTop: "30px",
     fontFamily: "Poppins",
+  },
+  link: {
+    textDecoration: "none",
+    color: "inherit",
   },
 });
 
@@ -98,7 +104,9 @@ function JeCherche() {
           <Icon {...icon} key={index} />
         ))}
       </div>
-      <Button className={classes.root}>Go !</Button>
+      <Link to={"/swipeNeedHelp"} className={classes.link}>
+        <Button className={classes.root}>Go !</Button>
+      </Link>
     </div>
   );
 }
