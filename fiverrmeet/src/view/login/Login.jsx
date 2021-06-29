@@ -1,8 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-import { Button, makeStyles } from "@material-ui/core";
-import { LockOpenOutlined } from "@material-ui/icons";
-=======
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
@@ -21,18 +17,11 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "#F0E68C",
     }
   },
->>>>>>> origin/dev
 
   back: {
     height: "815px",
   },
 
-<<<<<<< HEAD
-function Login(props) {
-  const classes = useStyles();
-  return <div></div>;
-}
-=======
   background: {
     backgroundImage: "url('/assets/fondco.png')",
     backgroundRepeat: "no-repeat",
@@ -59,25 +48,11 @@ function Login(props) {
     marginLeft: "20px",
   }
 }));
->>>>>>> origin/dev
 
 export default function IconLabelButtons() {
   const classes = useStyles();
 
   return (
-<<<<<<< HEAD
-    <div>
-      <Button
-        variant="contained"
-        color="primary"
-        size="small"
-        className={classes.button}
-        startIcon={<LockOpenOutlined />}
-      >
-        Se connecter avec Fiverr
-      </Button>
-
-=======
     <div className={classes.background}>
       <div className={classes.back}>
         <div className={classes.contain}>
@@ -91,7 +66,6 @@ export default function IconLabelButtons() {
           </Button>
         </div>
       </div>
->>>>>>> origin/dev
     </div>
   );
 }

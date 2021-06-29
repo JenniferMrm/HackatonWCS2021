@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./Welcome.css";
 
-function Accueil(props) {
+function Welcome() {
   const history = useHistory()
  setTimeout(() =>{
    history.push('/Login')
@@ -16,4 +16,4 @@ function Accueil(props) {
   </div>;
 }
 
-export default Accueil;
+export default Welcome;
