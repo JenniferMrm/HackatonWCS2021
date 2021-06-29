@@ -2,6 +2,7 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import SendIcon from "@material-ui/icons/Send";
+import "./Login.css";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -52,6 +53,7 @@ export default function IconLabelButtons() {
   const classes = useStyles();
 
   return (
+    <div id="loginAnimation">
     <div className={classes.background}>
       <div className={classes.back}>
         <div className={classes.contain}>
@@ -68,6 +70,7 @@ export default function IconLabelButtons() {
           </Button>
         </div>
       </div>
+    </div>
     </div>
   );
 }
