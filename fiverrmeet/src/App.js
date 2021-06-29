@@ -3,35 +3,19 @@ import Main from "./layout/Main";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Welcome from "./view/welcome/Welcome";
 import Login from "./view/login/Login";
-import Accueil from "./view/accueil/Accueil";
 import JeCherche from "./view/jeCherche/JeCherche";
 import JeSuis from "./view/jeSuis/JeSuis";
 import SwipeJC from "./view/swipeJeCherche/SwipeJC";
 import SwipeJS from "./view/swipeJeSuis/SwipeJS";
 import Message from "./view/message/Message";
+import Accueil from "./view/accueil/Accueil";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <Main>
-              <Welcome />
-            </Main>
-          )}
-        />
-        <Route
-          exact
-          path="/login"
-          render={() => (
-            <Main>
-              <Login />
-            </Main>
-          )}
-        />
+        <Route exact path="/" render={() => <Welcome />} />
+        <Route exact path="/login" render={() => <Login />} />
         <Route
           exact
           path="/home"
@@ -43,7 +27,7 @@ function App() {
         />
         <Route
           exact
-          path="/lookingFor"
+          path="/needHelp"
           render={() => (
             <Main>
               <JeCherche />
@@ -52,7 +36,7 @@ function App() {
         />
         <Route
           exact
-          path="/iCanHelp"
+          path="/ICanHelp"
           render={() => (
             <Main>
               <JeSuis />
@@ -61,7 +45,7 @@ function App() {
         />
         <Route
           exact
-          path="/swipeLookingFor"
+          path="/swipeNeedHelp"
           render={() => (
             <Main>
               <SwipeJC />
