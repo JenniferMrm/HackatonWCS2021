@@ -13,27 +13,26 @@ const useStyles = makeStyles((theme) => ({
     width: "90%",
     margin: "15px",
     borderRadius: "10%",
-    '&:hover': {
-        opacity:"0,5",
-    }
+    "&:hover": {
+      opacity: "0,5",
+    },
   },
-  img: {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
- 
-},
-button: {
-    border: "none", 
+  img: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  button: {
+    border: "none",
     background: "none",
 
-    '&:hover': {
-        opacity:"0.8",
+    "&:hover": {
+      opacity: "0.8",
     },
-},
-// back: {
-//    backgroundColor: "black",
-// }
+  },
+  // back: {
+  //    backgroundColor: "black",
+  // }
 }));
 
 export default function ButtonSizes() {
