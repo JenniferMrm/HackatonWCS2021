@@ -9,13 +9,15 @@ function Welcome() {
   }, 4990);
 
   return (
-    <div>
-      <img
-        className="logo"
-        id="logo-accueil"
-        alt="logoaccueil"
-        src="./assets/Logo.png"
-      />
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
+      <img id="logo-accueil" alt="logoaccueil" src="./assets/Logo2.png" />
+      <h3 id="h3">Welcome</h3>
     </div>
   );
 }
