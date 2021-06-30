@@ -76,6 +76,8 @@ const useStyles = makeStyles({
 
   container: {
     margin: "0",
+    height: "calc(100vh - 135px)",
+    overflowY : "scroll"
   },
   root: {
     background: "linear-gradient(45deg, #4ee89e 30%, #1dbf73 90%)",
