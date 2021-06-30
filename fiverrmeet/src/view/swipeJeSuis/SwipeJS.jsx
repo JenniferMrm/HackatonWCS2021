@@ -21,7 +21,7 @@ function SwipeJS() {
       image: "./assets/Fiverr_04_Trap_Fabrics_Backdrop_00613_PINK.jpg",
       name: "Rocky Balboa",
       description:
-        "Hi, I need to realise a graphic charts for a customer and I have a technical issue",
+        "Hi, I need to realise a graphic charter for a customer and I have a technical issue",
       icons: "./assets/icons/004-computer.png",
       title: "Graphic & Design",
     },
@@ -29,7 +29,7 @@ function SwipeJS() {
       image: "./assets/Fiverr_06_Kevin_Backdrop_02648_YELLOW.jpg",
       name: "John Coffey",
       description:
-        "I'm starting my professionnal activity in freelancing and I need advices for the prices to apply with my customers",
+        "I'm starting my professionnal activity in freelancing and I need advices about the prices I could apply",
       icons: "./assets/icons/002-web-programming.png",
       title: "Programming & Tech",
     },
