@@ -66,6 +66,10 @@ const useStyles = makeStyles({
     color : "#007f41",
     fontSize : "12px"
 
+  },
+
+  text : {
+    maxHeight : "70%"
   }
 });
 
@@ -81,7 +85,9 @@ function SwipeJC({ name, image, description, icons, title }) {
         <h2 className={classes.title}>{name}</h2>
         <img className={classes.image_icons} src={icons} alt={name.icons} />
         <p className={classes.title_logo}>{title}</p>
+        <div className={classes.text}>
         <p className={classes.description}>{description}</p>
+        </div>
        
       </div>
       <div>
