@@ -7,8 +7,10 @@ const useStyles = makeStyles({
     width: "100%",
     height: "50px",
     display: "flex",
-    justifyContent: "start",
-    alignItems: "end",
+    justifyContent: "center",
+    alignItems: "center",
+    // justifyContent: "start",
+    // alignItems: "end",
     position: "fixed",
     bottom: 0,
     boxShadow: "rgba(0,0,0,0.7) 0px 5px 10px",
@@ -23,11 +25,11 @@ function Footer() {
   return (
     <div className={classes.footerContainer}>
       <img
-        style={{ width: "30px", padding: "10px" }}
+        style={{ width: "20px", padding: "10px" }}
         src="./assets/Logo.png"
         alt="logo"
       ></img>
-      <p style={{ fontFamily: "Poppins" }}>
+      <p style={{ fontFamily: "Poppins", fontSize: "12px" }}>
         ©2021 Fiverr - All rights reserved
       </p>
     </div>

@@ -31,12 +31,14 @@ margin-top: 30%;
   }
   #h3{
     font-family: "pacifico";
+    margin-top: 200px;
       font-size:35px;
       display: flex;
       justify-content: center;
     animation-name: welcome;
     animation-duration: 5s;
     animation-iteration-count: 1;
+
   }
   @keyframes welcome {
     0% {
