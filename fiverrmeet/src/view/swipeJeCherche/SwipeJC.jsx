@@ -20,7 +20,7 @@ SwiperCore.use([Pagination, Navigation]);
 //   root: {},
 // });
 
-function SwipeJC({ title }) {
+function SwipeJC() {
   // const classes = useStyles();
 
   const user = [
@@ -29,44 +29,20 @@ function SwipeJC({ title }) {
       name: "Marc Orel",
       description: "Je cherche de l'aide afin de créer un caroussel en Windev.",
       icons: "./assets/icons/002-web-programming.png",
-      title: "Programming & Tech",
     },
     {
       image: "./assets/Fiverr_04_Trap_Fabrics_Backdrop_00613_PINK.jpg",
-      name: "Rocky Balboa",
+      name: "Jeanne Treton",
       description:
-        "Bonjour, j'ai besoin de réaliser une charte graphique pour un projet client, et j'ai un problème technique.",
-      icons: "./assets/icons/004-computer.png",
-      title: "Graphic & Design"
+        "Bonjour, j'ai besoin de réaliser une bande son pour un projet client, et j'ai un problème technique.",
+      icons: "./assets/icons/005-headphones.png",
     },
     {
       image: "./assets/Fiverr_06_Kevin_Backdrop_02648_YELLOW.jpg",
-      name: "John Coffey",
+      name: "Yann Berg",
       description:
-        "Je démarre mon activitée de freelance et j'ai besoin d'aide concernant les prix à appliquer pour commencer sur du Back-End.",
-        icons: "./assets/icons/002-web-programming.png",
-        title: "Programming & Tech",
-    },
-    {
-      image: "./assets/Fiverr_05_Kurt_Backdrop_01752_GREEN.jpg",
-      name: "Keyser Soze",
-      description: "J'ai besoin de réaliser un logo très spécifique avec illustrator, du jamais vue.",
-      icons: "./assets/icons/004-computer.png",
-      title: "Graphic & Design"
-    },
-    {
-      image: "./assets/Fiverr_07_Jimmy_Backdrop_00671_PINK.jpg",
-      name: "Han Solo",
-      description: "J'ai besoin d'accéder aux données satellites du Millénium, avant sa création.",
-      icons: "./assets/icons/009-data.png",
-      title: "Data"
-    },
-    {
-      image: "./assets/Fiverr_08_James_Backdop_01402_ORANGE.jpg",
-      name: "Hannibal Lecteur",
-      description: "Je souhaiterais obtenir les datas des hommes finissant leurs vie en prison.",
-      icons: "./assets/icons/009-data.png",
-      title: "Data"
+        "Je démarre mon activitée de freelance et j'ai besoin d'aide concernant les prix à appliquer pour commencer.",
+      icons: "./assets/icons/008-hand-shake.png",
     },
   ];
 
@@ -84,7 +60,6 @@ function SwipeJC({ title }) {
             <Card key={index} {...users} />
           </SwiperSlide>
         ))}
-        <p>{title}</p>
       </Swiper>
     </>
   );
