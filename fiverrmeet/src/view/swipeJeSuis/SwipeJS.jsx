@@ -1,71 +1,61 @@
-// import { makeStyles } from "@material-ui/core";
 import Card from "../../common/Card";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper React components
-
-// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
-
-// import "./SwipeJS.css";
-
-// import Swiper core and required modules
 import SwiperCore, { Pagination, Navigation } from "swiper/core";
 
-// install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
 
-// const useStyles = makeStyles({
-//   root: {},
-// });
-
 function SwipeJS() {
-  // const classes = useStyles();
-
   const user = [
     {
       image: "./assets/Fiverr_01_Colormatics_Backdrop_00598_ORANGE.jpg",
-      name: "",
-      description: "",
+      name: "Marc Orel",
+      description: "I'm looking for help to build a carousel in WinDev",
       icons: "./assets/icons/002-web-programming.png",
       title: "Programming & Tech",
     },
     {
       image: "./assets/Fiverr_04_Trap_Fabrics_Backdrop_00613_PINK.jpg",
-      name: "",
+      name: "Rocky Balboa",
       description:
-        "",
-      icons: "./assets/icons/005-headphones.png",
-      title: "Graphic & Design"
+        "Hi, I need to realise a graphic charter for a customer and I have a technical issue",
+      icons: "./assets/icons/004-computer.png",
+      title: "Graphic & Design",
     },
     {
       image: "./assets/Fiverr_06_Kevin_Backdrop_02648_YELLOW.jpg",
-      name: "",
+      name: "John Coffey",
       description:
-        "",
-      icons: "./assets/icons/008-hand-shake.png",
+        "I'm starting my professionnal activity in freelancing and I need advices about the prices I could apply",
+      icons: "./assets/icons/002-web-programming.png",
       title: "Programming & Tech",
     },
     {
-      image: "./assets/.jpg",
-      name: "",
-      description: "",
-      icons: "./assets/icons/",
-      title: "Graphic & Design"
+      image: "./assets/Fiverr_05_Kurt_Backdrop_01752_GREEN.jpg",
+      name: "Keyser Soze",
+      description:
+        "I need to do a really specific logo on Illustrator, something never seen before.",
+      icons: "./assets/icons/004-computer.png",
+      title: "Graphic & Design",
     },
     {
-      image: "./assets/.jpg",
-      name: "",
-      description: "",
-      icons: "./assets/icons/",
-      title: "Data"
+      image: "./assets/Fiverr_07_Jimmy_Backdrop_00671_PINK.jpg",
+      name: "Han Solo",
+      description:
+        "I need to access the data of the Falcon Millenium, before it's creation.",
+      icons: "./assets/icons/009-data.png",
+      title: "Data",
     },
     {
-      image: "./assets/.jpg",
-      name: "",
-      description: "",
-      icons: "./assets/icons/",
+      image: "./assets/Fiverr_08_James_Backdop_01402_ORANGE.jpg",
+      name: "Hannibal Lecteur",
+      description:
+        "I would like to get the datas of all men which ended up their lifes in prison",
+      icons: "./assets/icons/009-data.png",
+      title: "Data",
     },
   ];
 
