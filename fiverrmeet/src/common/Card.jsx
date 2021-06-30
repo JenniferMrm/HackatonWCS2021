@@ -53,11 +53,19 @@ const useStyles = makeStyles({
   },
   card :{
     width : "80%",
+    height: "80%",
     display : "flex",
     flexDirection : "column",
     alignItems : "center",
     justifyContent : "center", 
     marginTop: "20px"
+  },
+  title_logo : {
+    display: "flex",
+    justifyContent : "center",
+    color : "#007f41",
+    fontSize : "12px"
+
   }
 });
 
