@@ -1,72 +1,60 @@
-// import { makeStyles } from "@material-ui/core";
 import Card from "../../common/Card";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper React components
-
-// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
-
-// import "./SwipeJC.css";
-
-// import Swiper core and required modules
 import SwiperCore, { Pagination, Navigation } from "swiper/core";
 
-// install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
 
-// const useStyles = makeStyles({
-//   root: {},
-// });
-
-function SwipeJC({ title }) {
-  // const classes = useStyles();
-
+function SwipeJC() {
   const user = [
     {
-      image: "./assets/Fiverr_01_Colormatics_Backdrop_00598_ORANGE.jpg",
-      name: "Marc Orel",
-      description: "Je cherche de l'aide afin de créer un caroussel en Windev.",
-      icons: "./assets/icons/002-web-programming.png",
-      title: "Programming & Tech",
-    },
-    {
-      image: "./assets/Fiverr_04_Trap_Fabrics_Backdrop_00613_PINK.jpg",
-      name: "Rocky Balboa",
+      image: "./assets/Fiverr_06_Kevin_Backdrop_02648.jpg",
+      name: "Julien Mari",
       description:
-        "Bonjour, j'ai besoin de réaliser une charte graphique pour un projet client, et j'ai un problème technique.",
-      icons: "./assets/icons/004-computer.png",
-      title: "Graphic & Design"
+        "I can help you create presentation slides with different templates",
+      icons: "./assets/icons/006-social-media.png",
+      title: "Digital Marketing",
     },
     {
-      image: "./assets/Fiverr_06_Kevin_Backdrop_02648_YELLOW.jpg",
-      name: "John Coffey",
+      image: "./assets/Fiverr_09_April_Backdrop_01646_MEDIUM_GREEN.jpg",
+      name: "Lauryn Hill",
       description:
-        "Je démarre mon activitée de freelance et j'ai besoin d'aide concernant les prix à appliquer pour commencer sur du Back-End.",
-        icons: "./assets/icons/002-web-programming.png",
-        title: "Programming & Tech",
+        "A rich experience in video assembly for known Youtubers. I'm able to help",
+      icons: "./assets/icons/001-lifestyle.png",
+      title: "Lifestyle",
     },
     {
-      image: "./assets/Fiverr_05_Kurt_Backdrop_01752_GREEN.jpg",
-      name: "Keyser Soze",
-      description: "J'ai besoin de réaliser un logo très spécifique avec illustrator, du jamais vue.",
-      icons: "./assets/icons/004-computer.png",
-      title: "Graphic & Design"
+      image: "./assets/Fiverr_13_Ritika_Background_00682_GREEN.jpg",
+      name: "Billie Eilish",
+      description: "I can show you how to assemble a professional studio video",
+      icons: "./assets/icons/007-online-video.png",
+      title: "Music & Audio",
     },
     {
-      image: "./assets/Fiverr_07_Jimmy_Backdrop_00671_PINK.jpg",
-      name: "Han Solo",
-      description: "J'ai besoin d'accéder aux données satellites du Millénium, avant sa création.",
-      icons: "./assets/icons/009-data.png",
-      title: "Data"
+      image: "./assets/Fiverr_14_Gabrielle_Background_01097_YELLOW.jpg",
+      name: "Coline",
+      description: "Blog writter comitted in animal rights and ecology",
+      icons: "./assets/icons/001-lifestyle.png",
+      title: "Lifestyle",
     },
     {
-      image: "./assets/Fiverr_08_James_Backdop_01402_ORANGE.jpg",
-      name: "Hannibal Lecteur",
-      description: "Je souhaiterais obtenir les datas des hommes finissant leurs vie en prison.",
-      icons: "./assets/icons/009-data.png",
-      title: "Data"
+      image: "./assets/Fiverr_12_Romana_Backdrop_02486_DARK_PURPLE.jpg",
+      name: "Enjoy Phoenix",
+      description:
+        "You want to assemble a video for any projects ? I can help you !",
+      icons: "./assets/icons/007-online-video.png",
+      title: "Music & Audio",
+    },
+    {
+      image: "./assets/Fiverr_15_David_Background_02846_PINK.jpg",
+      name: "Arniaud Maurice",
+      description:
+        "You're trying to gain more success on social media like instagram ?",
+      icons: "./assets/icons/006-social-media.png",
+      title: "Digital Marketing",
     },
   ];
 
@@ -84,7 +72,6 @@ function SwipeJC({ title }) {
             <Card key={index} {...users} />
           </SwiperSlide>
         ))}
-        <p>{title}</p>
       </Swiper>
     </>
   );

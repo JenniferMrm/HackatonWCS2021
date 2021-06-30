@@ -2,8 +2,55 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import Icon from "../jeCherche/components/Icon";
 import Button from "@material-ui/core/Button";
-import { useState } from "react";
 import { Link } from "react-router-dom";
+
+const icons = [
+  {
+    url: "./assets/icons/icon01.png",
+    color: "#F02300",
+    title: "Lifestyle",
+  },
+  {
+    url: "./assets/icons/icon02.png",
+    color: "#FF8000",
+    title: "Programming & Tech",
+  },
+  {
+    url: "./assets/icons/icon03.png",
+    color: "#FFFB01",
+    title: "Writing & Translation",
+  },
+  {
+    url: "./assets/icons/icon04.png",
+    color: "#D0E500",
+    title: "Graphic & Design",
+  },
+  {
+    url: "./assets/icons/icon05.png",
+    color: "#1FBF73",
+    title: "Music & Audio",
+  },
+  {
+    url: "./assets/icons/icon06.png",
+    color: "#017940",
+    title: "Digital Marketing",
+  },
+  {
+    url: "./assets/icons/icon07.png",
+    color: "#4040FF",
+    title: "Video & Animation",
+  },
+  {
+    url: "./assets/icons/icon08.png",
+    color: "#9F2BC0",
+    title: "Business",
+  },
+  {
+    url: "./assets/icons/icon09.png",
+    color: "#FF80AE",
+    title: "Data",
+  },
+];
 
 const useStyles = makeStyles({
   title: {
@@ -47,58 +94,9 @@ const useStyles = makeStyles({
   },
 });
 
-
-
 function JeSuis() {
   const classes = useStyles();
-  const [icons, setIcons] = useState([
-    {
-      url: "./assets/icons/icon01.png",
-      color: "#F02300",
-      title: "Lifestyle",
-    },
-    {
-      url: "./assets/icons/icon02.png",
-      color: "#FF8000",
-      title: "Programming & Tech",
-    },
-    {
-      url: "./assets/icons/icon03.png",
-      color: "#FFFB01",
-      title: "Writing & Translation",
-    },
-    {
-      url: "./assets/icons/icon04.png",
-      color: "#D0E500",
-      title: "Graphic & Design",
-    },
-    {
-      url: "./assets/icons/icon05.png",
-      color: "#1FBF73",
-      title: "Music & Audio",
-    },
-    {
-      url: "./assets/icons/icon06.png",
-      color: "#017940",
-      title: "Digital Marketing",
-    },
-    {
-      url: "./assets/icons/icon07.png",
-      color: "#4040FF",
-      title: "Video & Animation",
-    },
-    {
-      url: "./assets/icons/icon08.png",
-      color: "#9F2BC0",
-      title: "Business",
-    },
-    {
-      url: "./assets/icons/icon09.png",
-      color: "#FF80AE",
-      title: "Data",
-    },
-  ]); 
-  
+
   return (
     <div className={classes.container}>
       <h1 className={classes.title}>I am...</h1>
