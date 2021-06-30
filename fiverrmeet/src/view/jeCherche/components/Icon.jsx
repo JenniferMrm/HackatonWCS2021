@@ -38,6 +38,8 @@ function Icon({ color, url, title }) {
   const [invisible, setInvisible] = React.useState(true);
   const handleInvisible = () => {
     setInvisible(!invisible);
+    console.log(title)
+
   };
 
   return (
