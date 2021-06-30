@@ -9,8 +9,12 @@ const useStyles = makeStyles({
     fontFamily: "Poppins",
     textAlign: "center",
     marginBottom: "50px",
-    borderBottom: "1px solid",
+    borderBottom: "2px solid",
     color: "#017940",
+    marginLeft : "30px",
+    marginRight : "30px",
+    padding : "10px"
+
   },
 
   contain: {
@@ -26,7 +30,7 @@ const useStyles = makeStyles({
     margin: "0",
   },
   root: {
-    background: "linear-gradient(45deg, #3be593 30%, #00732e 90%)",
+    background: "linear-gradient(45deg, #4ee89e 30%, #1dbf73 90%)",
     border: 0,
     borderRadius: 10,
     boxShadow: "0 3px 5px 2px rgba(199, 201, 200, .3)",
@@ -38,6 +42,7 @@ const useStyles = makeStyles({
     margin: "auto",
     marginTop: "30px",
     fontFamily: "Poppins",
+    fontWeight: "bold"
   },
 
   link: {
